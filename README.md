@@ -26,12 +26,12 @@ Here is a glimpse of the application in action:
 
 ### 1. Landing Page
 *The modern and responsive home interface.*
-![Landing Page](<img width="1919" height="534" alt="Screenshot 2025-12-26 155539" src="https://github.com/user-attachments/assets/1bca448d-f9c9-4480-83d5-8315a765356e" />
+![Landing Page]("C:\Users\abhis\Pictures\Screenshots\Screenshot 2025-12-26 155539.png"
 )
 
 ### 2. URL Generator Interface
 *The simple dashboard where users input their links.*
-![Generator Page](<img width="1901" height="915" alt="Screenshot 2025-12-26 155528" src="https://github.com/user-attachments/assets/030da41d-f4ef-4848-a54d-4ba536b32a0d" />
+![Generator Page]("C:\Users\abhis\Pictures\Screenshots\Screenshot 2025-12-26 155528.png"
 )
 
 ---
