@@ -94,7 +94,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 // Renamed the component to follow standard naming conventions (PascalCase)
-const shorten = () => {
+const Shorten = () => {
   // CORRECTED: Ensured all state variables and their setters use consistent camelCase.
   const [url, setUrl] = useState("");
   const [shortUrl, setShortUrl] = useState(""); // This is the state variable
@@ -183,5 +183,5 @@ const shorten = () => {
   );
 };
 
-export default shorten;
+export default Shorten;
 
