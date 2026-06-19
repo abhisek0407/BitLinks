@@ -15,7 +15,7 @@ export default function Home() {
             URL shortener.
           </p>
           <div className="flex gap-3">
-            <Link href="/Shorten">
+           <Link href="/shorten">
               <button className="bg-purple-500 rounded-lg shadow-lg p-3 py-1 font-bold text-white">
                 try Now
               </button>

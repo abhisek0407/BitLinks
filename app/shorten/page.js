@@ -93,11 +93,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
-// Renamed the component to follow standard naming conventions (PascalCase)
-const Shorten = () => {
-  // CORRECTED: Ensured all state variables and their setters use consistent camelCase.
+
+const shorten = () => {
   const [url, setUrl] = useState("");
-  const [shortUrl, setShortUrl] = useState(""); // This is the state variable
+  const [shortUrl, setShortUrl] = useState(""); 
   const [generated, setGenerated] = useState("");
 
   const sanitizeShortUrl = (text) => {
@@ -109,7 +108,6 @@ const Shorten = () => {
   };
 
   const generate = () => {
-    // CORRECTED: This now correctly uses the camelCase state variable 'shortUrl'
     const sanitized = sanitizeShortUrl(shortUrl);
     if (!sanitized) {
         alert("Please enter a valid custom text for the short URL.");
@@ -138,7 +136,7 @@ const Shorten = () => {
           setGenerated(`${process.env.NEXT_PUBLIC_HOST}/${sanitized}`);
         }
         setUrl("");
-        setShortUrl(""); // Use the correct setter
+        setShortUrl(""); 
         alert(result.message);
       })
       .catch((error) => console.error(error));
@@ -157,10 +155,10 @@ const Shorten = () => {
         />
         <input
           type="text"
-          value={shortUrl} // Use the correct state variable
+          value={shortUrl} 
           className="px-4 py-2 focus:outline-purple-600 rounded-md bg-white"
           placeholder="Enter your custom short URL text"
-          onChange={(e) => setShortUrl(e.target.value)} // Use the correct setter
+          onChange={(e) => setShortUrl(e.target.value)} 
         />
         <button
           onClick={generate}
@@ -183,5 +181,5 @@ const Shorten = () => {
   );
 };
 
-export default Shorten;
+export default shorten;
 

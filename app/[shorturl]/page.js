@@ -3,9 +3,7 @@ import clientPromise from "@/lib/mongodb"
 
 
 export default async function Page({ params }) {
-      const resolvedParams = await params;
-
-    const shorturl = resolvedParams.shorturl;
+     const shorturl = params.shorturl;
     console.log("PARAM:", shorturl);
 
     const client = await clientPromise;
